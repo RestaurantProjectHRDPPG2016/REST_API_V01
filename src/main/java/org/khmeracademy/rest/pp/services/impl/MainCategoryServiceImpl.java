@@ -6,6 +6,8 @@ import org.khmeracademy.rest.pp.entities.MainCategory;
 import org.khmeracademy.rest.pp.repositories.MainCategoryRepository;
 import org.khmeracademy.rest.pp.services.MainCategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Required;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -32,5 +34,4 @@ public class MainCategoryServiceImpl implements MainCategoryService {
 	public ArrayList<MainCategory> findAll() {
 		return mainCategoryRepository.findAll();
 	}
-
 }

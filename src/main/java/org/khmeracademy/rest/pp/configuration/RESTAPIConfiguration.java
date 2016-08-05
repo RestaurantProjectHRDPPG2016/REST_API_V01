@@ -31,7 +31,6 @@ public class RESTAPIConfiguration extends WebMvcConfigurerAdapter {
 	public SqlSessionFactoryBean sqlSessionFactoryBean(){
 		SqlSessionFactoryBean sqlSessionFactoryBean =  new SqlSessionFactoryBean();
 		sqlSessionFactoryBean.setDataSource(dataSource);
-		//sqlSessionFactoryBean.setTypeAliasesPackage("youra.homework.mybatis.entity");
 		return sqlSessionFactoryBean;
 	}
 	

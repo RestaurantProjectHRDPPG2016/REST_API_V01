@@ -1,5 +1,8 @@
 package org.khmeracademy.rest.pp.entities;
 
+import org.apache.ibatis.annotations.Mapper;
+
+@Mapper
 public class MainCategory {
 	private int id;
 	private String img1;
